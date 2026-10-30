@@ -1,5 +1,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  tanstackStart: false,
+  tanstackStart: {
+    server: { entry: "src/server.ts" },
+    router: { entry: "src/router" },
+  },
 });
